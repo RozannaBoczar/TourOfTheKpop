@@ -1,0 +1,8 @@
+<h2>Top Idols</h2>
+<div class="idols-menu">
+  <a *ngFor="let idol of idols"  routerLink="/detail/{{idol.id}}">
+    {{idol.name}}
+  </a>
+</div>
+
+<app-idol-search></app-idol-search>
